@@ -26,7 +26,7 @@ js4eos push action fortestatlas issue '["fortestatlas", "10000000.0000 VULA"]' -
 ![编译和部署](https://github.com/AtlasQuan/Practice-of-EOS/blob/master/Pictures/complie%26deply.png)
 ![发币](https://github.com/AtlasQuan/Practice-of-EOS/blob/master/Pictures/create&issue.png)
 
-> **问题2：根据js4eos的教程中[生成abi文件的命令]（https://github.com/itleaks/js4eos#%E7%94%9F%E6%88%90abi%E6%96%87%E4%BB%B6generate-abi)，我不知道contractclass参数在这里应该怎么写，写“token”生成的abi文件是不正确的格式。最后我使用的abi文件是直接复制了通过cleos --abigen命令生成的abi文件。不确定这种做法会不会有什么问题。**
+> **问题2：根据js4eos的教程中[生成abi文件的命令](https://github.com/itleaks/js4eos#%E7%94%9F%E6%88%90abi%E6%96%87%E4%BB%B6generate-abi)，我不知道contractclass参数在这里应该怎么写，写“token”生成的abi文件是不正确的格式。最后我使用的abi文件是直接复制了通过cleos --abigen命令生成的abi文件。不确定这种做法会不会有什么问题。**
 
 - 正常转账：
 
@@ -39,9 +39,9 @@ js4eos get currency balance fortestatlas fortestatlas
 ![转账](https://github.com/AtlasQuan/Practice-of-EOS/blob/master/Pictures/transfer.png)
 
 - 绕过权限转账转回来：
-``
+```
 js4eos push action fortestatlas transfer '["kylinnum2222", "fortestatlas", "10000000.0000 VULA",""]' -p fortestatlas
-``
+```
 
 > **问题3：这里之前的运行都是符合预期的。但是这里利用漏洞绕过权限时执行失败了，不知道原因是什么。**
 
