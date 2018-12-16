@@ -1,8 +1,8 @@
 ## 基于[一篇EOS漏洞分析的博客](https://bcsec.org/index/detail/tag/2/id/407) 在复现权限校验不严格的漏洞时遇到的问题：
 
-代码在eosio.token.vul2文件夹中。直接基于官方文档的token合约（https://github.com/EOSIO/eos/tree/master/contracts/eosio.token） 的transfer函数修改的。
+代码在eosio.token.vul2文件夹中。直接基于[官方文档的token合约](https://github.com/EOSIO/eos/tree/master/contracts/eosio.token） 的transfer函数修改的。
 
-按照博客里的指示用kylin测试网作为实验环境，并使用js4eos（https://github.com/itleaks/js4eos） 来进行创建账号、编译合约、部署合约、领取EOS、购买RAM等。(测试账号名称:fortestatlas)
+按照博客里的指示用kylin测试网作为实验环境，并使用js4eos（https://github.com/itleaks/js4eos） 来进行创建账号、编译合约、部署合约、领取EOS、购买RAM等。(我的测试账号名称:fortestatlas)
 
 > **问题1：在测试EOS合约漏洞时，在测试网上测试和在本地的私有节点上测试有什么区别和优劣之分吗？**
 
