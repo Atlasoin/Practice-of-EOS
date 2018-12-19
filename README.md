@@ -28,6 +28,8 @@ js4eos push action fortestatlas issue '["fortestatlas", "10000000.0000 VULA"]' -
 
 > **问题2：根据js4eos的教程中[生成abi文件的命令](https://github.com/itleaks/js4eos#%E7%94%9F%E6%88%90abi%E6%96%87%E4%BB%B6generate-abi)，我不知道contractclass参数在这里应该怎么写，写“token”生成的abi文件是不正确的格式。最后我使用的abi文件是直接复制了通过cleos --abigen命令生成的abi文件。不确定这种做法会不会有什么问题。**
 
+> **解决方案： 正确的写法应该是``js4eos compile2 -g xxx.abi xxx.cpp --contract eosio.token``**
+
 - 正常转账：
 
 ```
